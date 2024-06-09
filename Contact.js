@@ -39,7 +39,7 @@ export const Contact = () => {
                 userEmail: formDetails.userEmail,
                 phone: formDetails.phone,
             }, {
-                publicKey: '############'
+                publicKey: '#############'
             }).then(
                 () => {
                     console.log('Email sent successfully!');
