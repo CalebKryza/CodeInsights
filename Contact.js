@@ -31,7 +31,7 @@ export const Contact = () => {
         if (Object.values(formDetails).every(value => !!value)) {
             setButtonText("Sending...");
     
-            emailjs.send("service_s3bkt0h", "template_va63wj5", {
+            emailjs.send("service_#######", "template_#######", {
                 from_name: "CalebKryza.dev",
                 message: formDetails.message,
                 firstName: formDetails.firstName,
@@ -39,7 +39,7 @@ export const Contact = () => {
                 userEmail: formDetails.userEmail,
                 phone: formDetails.phone,
             }, {
-                publicKey: 'JMwxvcJATFAwzfgPp'
+                publicKey: '############'
             }).then(
                 () => {
                     console.log('Email sent successfully!');
